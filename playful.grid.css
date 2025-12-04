@@ -36,3 +36,10 @@ button{
 }
 
 
+.grid-selector{
+    display: none;
+}
+
+.grid-selector-visible{
+    display: block;
+}
