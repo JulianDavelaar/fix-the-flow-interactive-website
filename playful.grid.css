@@ -1,0 +1,38 @@
+header{
+    background-color: var(--primary-color);
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    color: var(--white);
+
+}
+
+article{
+    display: flex;
+    justify-content: left;
+}
+
+h2{
+    color: var(--grey-text-color);
+}
+
+.icon{
+    background-color: var(--grey-text-color);
+}
+
+
+body{
+    margin: auto;
+}
+
+footer{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: var(--primary-color);
+}
+
+
