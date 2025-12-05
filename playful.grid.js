@@ -15,7 +15,7 @@ let gridButton = document.querySelector('.grid-selector-button')
 //  showMoreButton.addEventListener('click', function()){
 //  alert('Het werkt!')}
 gridButton.addEventListener('click', function() {
-alert('het werkt!')
+console.log
 
 //gridButton roept de variabele op die we in stap 1 hebben gemaakt
 //.addEventListener is het item wat 'luistert' voor als er een event gebeurt.
