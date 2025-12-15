@@ -35,6 +35,10 @@ h2{
     color: var(--grey-text-color);
 }
 
+h4{
+    font-size: x-large;
+    font-weight: 400;
+}
 button{
     background: var(--primary-color);
 }
@@ -53,9 +57,32 @@ button{
 
 .grid-selector-visible{
     display: block;
+    position: fixed;
+    width: 100%;
+    margin-top: 4.75em;
+    display: grid;
+    align-items: center;
+    border: none;
+    padding-left: 30px;
+
+}
+/* gebruik hier # zodat je de id selecteert, dit kan omdat ik nu maar 1 popover op de site heb staan */
+/* en met section kan ik specifiek de sections van de popover selecteren, anders worden alle sections op de pagina geselecteerd */
+#grid-popover section {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+#grid-popover section img {
+  width: 36px;
+  height: 36px;
+  /* img formaat specifiek naar formaat in design */
 }
 
 
 .icon{
     background-color: var(--grey-text-color);
 }
+
