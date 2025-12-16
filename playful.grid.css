@@ -1,3 +1,7 @@
+body{
+    margin: auto;
+}
+
 header{
     background-color: var(--primary-color);
     display: flex;
@@ -7,9 +11,41 @@ header{
 
 }
 
-body{
-    margin: auto;
+
+/* 3x3 Grid  */
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* repeat is korter en duidelijker ipv 3x 1fr, ook handiger later met de verschillende grids */
+  gap: 0;
+  padding: 0;
+  margin: 0;
 }
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  aspect-ratio: 1 / 1; /* Maakt vierkante afbeeldingen */
+}
+
+/* Responsive: op kleinere schermen minder kolommen */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 
 footer{
     background-color: var(--primary-color);
@@ -39,16 +75,16 @@ h4{
     font-size: x-large;
     font-weight: 400;
 }
+
 button{
     background: var(--primary-color);
 }
 
 
+
 .grid-selector{
     display: none;
 }
-
-
 
 .grid-selector-button{
     margin-left: auto;
@@ -64,6 +100,8 @@ button{
     align-items: center;
     border: none;
     padding-left: 30px;
+
+
 
 }
 /* gebruik hier # zodat je de id selecteert, dit kan omdat ik nu maar 1 popover op de site heb staan */

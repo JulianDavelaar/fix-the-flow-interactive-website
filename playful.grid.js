@@ -27,3 +27,12 @@ document.querySelector('.grid-selector').classList.toggle('grid-selector-visible
 } )
 // document.querySelector selecteert wat er tussen de haakjes staat
 // classList.toggle selecteert de class in CSS die je al klaar hebt staan maar nog niet geactiveert is.
+
+
+// button voor 3x3 grid layout
+//selecteert de Large grid(3x3) button
+let grid3x3 = document.querySelector('grid3x3')
+
+grid3x3.addEventListener('click', function(){
+    document.querySelector('grid3x3').classList.toggle('grid3x3-visible')
+})
