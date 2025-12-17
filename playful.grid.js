@@ -29,10 +29,48 @@ document.querySelector('.grid-selector').classList.toggle('grid-selector-visible
 // classList.toggle selecteert de class in CSS die je al klaar hebt staan maar nog niet geactiveert is.
 
 
-// button voor 3x3 grid layout
-//selecteert de Large grid(3x3) button
-let grid3x3 = document.querySelector('grid3x3')
+// button voor 2x2 grid layout
+//selecteert de XLarge grid(2x2) button
+let grid2x2 = document.querySelector('.grid2x2')
+
+grid2x2.addEventListener('click', function(){
+    document.querySelector('.grid').classList.toggle('grid-alternate2')
+        document.querySelector('.grid-selector').classList.remove('grid-selector-visible')
+            document.querySelector('.grid').classList.remove('grid-alternate3', 'grid-alternate4','grid-alternate5')
+})
+
+//button voor 3x3 grid layout
+
+let grid3x3 = document.querySelector('.grid3x3')
 
 grid3x3.addEventListener('click', function(){
-    document.querySelector('grid3x3').classList.toggle('grid3x3-visible')
+    document.querySelector('.grid').classList.toggle('grid-alternate3')
+        document.querySelector('.grid-selector').classList.remove('grid-selector-visible')
+            document.querySelector('.grid').classList.remove('grid-alternate2', 'grid-alternate4','grid-alternate5')
+
+        
+} )
+
+
+//button voor 4x4 grid layout
+
+let grid4x4 = document.querySelector('.grid4x4')
+
+grid4x4.addEventListener('click', function(){
+    document.querySelector('.grid').classList.toggle('grid-alternate4')
+        document.querySelector('.grid-selector').classList.remove('grid-selector-visible')
+            document.querySelector('.grid').classList.remove('grid-alternate2', 'grid-alternate3','grid-alternate5')
+
+})
+
+
+//button voor 5x5 grid layout
+
+let grid5x5 = document.querySelector('.grid5x5')
+
+grid5x5.addEventListener('click', function(){
+    document.querySelector('.grid').classList.toggle('grid-alternate5')
+        document.querySelector('.grid-selector').classList.remove('grid-selector-visible')
+            document.querySelector('.grid').classList.remove('grid-alternate2', 'grid-alternate4','grid-alternate3')
+
 })
