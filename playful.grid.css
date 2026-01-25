@@ -49,6 +49,7 @@ text-align: left;
   height: 100%;
   object-fit: cover;
   display: block;
+  margin: none;
   aspect-ratio: 1 / 1; /* Maakt vierkante afbeeldingen */
 }
 
